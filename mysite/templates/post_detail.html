@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="container">
+
   <div class="row">
     <div class="col-md-8 card mb-4  mt-3 left  top">
       <div class="card-body">
@@ -8,10 +9,11 @@
 		<img src="{{ post.cover.url}}" alt="{{ post.title }}">
         <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
         <p class="card-text ">{{ object.content | safe }}</p>
-		
       </div>
+	   <body>
     </div>
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        
   </div>
 </div>
 
