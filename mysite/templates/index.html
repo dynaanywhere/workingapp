@@ -1,6 +1,10 @@
+
+
 {% extends "base.html" %}
-{% load static %} 
+
 {% block content %}
+<head>
+    	
 <style>
     body {
         font-family: "Roboto", sans-serif;
@@ -22,15 +26,22 @@
     <div class="container">
         <div class="row">
             <div class=" col-md-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to Dynapedia Technologies </h3>
+                <div class="site-heading justify">
+                    <h3 class=" site-heading my-4 mt-3 text-white">Dynapedia Technologies and Hosting Works </h3>
+                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IBxwM1Gbsfg"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ajMqhFz3FIk"></iframe>
+             
                     <p class="text-light">&nbsp
                     </p>
                 </div>
             </div>
+                    
+            </div>
         </div>
     </div>
+    
 </header>
+
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Bootstrap 4 Responsive Videos</title>
@@ -49,7 +60,8 @@
 
     <h2 class="mt-4"></h2>
     <div class="embed-responsive embed-responsive-21by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ajMqhFz3FIk"></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/78IAxgtdQMc"></iframe>
+        
     </div>
 
 <div class="container">
@@ -64,15 +76,17 @@
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                     <p class="card-text">{{post.content|slice:":200" }}</p>
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-					
+				
                 </div>
             </div>
-			
+
             {% endfor %}
+           
         </div>
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
 </div>
+    
 {% if is_paginated %}
   <nav aria-label="Page navigation conatiner"></nav>
   <ul class="pagination justify-content-center">
