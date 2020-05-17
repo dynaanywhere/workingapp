@@ -72,36 +72,78 @@
     
 <body>
 <div class="bs-example">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   
-        <div class="navbar-header">
+         <div class="navbar-header">
     <a class="navbar-brand" href=""{% url 'home' %}">
-      <img classs="img-responsive" width="50px" height="100" src="https://scontent-los2-1.xx.fbcdn.net/v/t1.0-9/12508841_562868633862489_1094979718645621532_n.jpg?_nc_cat=109&_nc_sid=e3f864&_nc_eui2=AeGggBGia9zH2P4sJNNZ1IQ24IqaLLhC1mXgiposuELWZWt__yLFkA9igpZIaL7z0qJ9goBQpikXFgC3Fj1uqhUI&_nc_ohc=HKbk2xBfkyoAX-PLTV6&_nc_ht=scontent-los2-1.xx&oh=c23a87d12d50496ac05fae136489aa44&oe=5EDF6764">
+      <img classs="img-responsive" width="100px" height="100" src="https://scontent-los2-1.xx.fbcdn.net/v/t1.0-9/12508841_562868633862489_1094979718645621532_n.jpg?_nc_cat=109&_nc_sid=e3f864&_nc_eui2=AeGggBGia9zH2P4sJNNZ1IQ24IqaLLhC1mXgiposuELWZWt__yLFkA9igpZIaL7z0qJ9goBQpikXFgC3Fj1uqhUI&_nc_ohc=HKbk2xBfkyoAX-PLTV6&_nc_ht=scontent-los2-1.xx&oh=c23a87d12d50496ac05fae136489aa44&oe=5EDF6764">
     </a> 
   </div>
-    
-  <div class="col-10 text-right d-md-none">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-                <a href="#" class="nav-item nav-link">Our Vision</a>
-                <a href="#" class="nav-item nav-link">The Pastorate</a>
-                <a href="#" class="nav-item nav-link">Youth Church</a>
-                <a href="#" class="nav-item nav-link">Workers</a>                                     
-                <a href="#" class="nav-item nav-link">Service Days</a>
-                <a href="#" class="nav-item nav-link">Testimonies</a>
-                <a href="#" class="nav-item nav-link">Sermons</a>                   
-                <a href="#" class="nav-item nav-link">Give Online</a>         
-                <a href="#" class="nav-item nav-link">Programes and Events</a>                   
-                <a href="#" class="nav-item nav-link disabled" tabindex="-1"></a>
-            <div class="navbar-nav ml-auto">
-                <a href="#" class="nav-item nav-link">Login</a>
-               
-    </nav>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Information Center
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Our Vision</a>
+          <a class="dropdown-item" href="#">The Pastorate</a>
+          <a class="dropdown-item" href="#">Service days</a>
+          <a class="dropdown-item" href="#">Workers</a>
+          <a class="dropdown-item" href="#">Sermons</a>
+          <a class="dropdown-item" href="#">The Youth Church</a>
+          <a class="dropdown-item" href="#">Give Online</a>
+          <a class="dropdown-item" href="#">Contact Us</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Need Prayer</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/04/featuredwaterfalls.jpg"
+        alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://www.christiancourier.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f08dc83bf812b5b6cd92236f9a19ba46c1e25771/lessons-from-the-ark-of-the-covenant.jpg"
+        alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://ourladylebanon.com/pictures/2018/6/holy-communion-bread-wine_hj7ip5nr__F0000-1.png"
+        alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                         
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Activate Bootstrap 4 Carousel via Data Attributes</title>
@@ -112,8 +154,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 .carousel{
-    background: #000000;
-    margin-top: 100px;
+    background: #283747;
+    margin-top: 20px;
 }
 .carousel-item{
     text-align: center;
@@ -136,21 +178,22 @@
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t1.0-9/12508841_562868633862489_1094979718645621532_n.jpg?_nc_cat=109&_nc_sid=e3f864&_nc_eui2=AeGggBGia9zH2P4sJNNZ1IQ24IqaLLhC1mXgiposuELWZWt__yLFkA9igpZIaL7z0qJ9goBQpikXFgC3Fj1uqhUI&_nc_ohc=HKbk2xBfkyoAX-PLTV6&_nc_ht=scontent-los2-1.xx&oh=c23a87d12d50496ac05fae136489aa44&oe=5EDF6764" alt="First Slide">
+            <img src="https://scontent-los2-1.xx.fbcdn.net/v/t1.0-9/10500536_388286727987348_7170588060702758728_n.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_eui2=AeHFp9zTyreagS0UivpyEwaOwh9mp8M-WqzCH2anwz5arGbzWs4wwzd7IIIHpAs_GZFcO_MsBOoF0edpUpcVV5HZ&_nc_ohc=K6N-XgeUwvsAX8t2ITo&_nc_ht=scontent-los2-1.xx&oh=86ef9e4c50dcdabc86123b635225674d&oe=5EE56229" alt="First Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h7></h7>
                     <p>.</p>
                 </div>
             </div>
+                                                             
             <div class="carousel-item">
-                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t1.0-9/10500536_388286727987348_7170588060702758728_n.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_eui2=AeHFp9zTyreagS0UivpyEwaOwh9mp8M-WqzCH2anwz5arGbzWs4wwzd7IIIHpAs_GZFcO_MsBOoF0edpUpcVV5HZ&_nc_ohc=zPWQSb50xf0AX_LN8F-&_nc_ht=scontent-los2-1.xx&oh=ff35a9eb8c10b2f8b9ce95abb60751db&oe=5EDD7929" alt="Second Slide">
+                <img src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/e35/82860183_194833681881425_3751952779678767605_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=dG9c55L5TlkAX_I5aJQ&oh=e52a431a2782b1bb38363b4f61912d2d&oe=5EEB39B5" alt="Second Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h8></h8>
                     <p></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2017/01/03/07/32/bible-1948778__340.jpg" alt="Third Slide">
+                <img src="https://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201811/313619774.jpg" alt="Third Slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h9></h9>
                     <p></p>
